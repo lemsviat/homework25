@@ -29,6 +29,6 @@ public class Customer {
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     @Fetch(FetchMode.JOIN)
     @JoinColumn(name = "customer_id")
-    private Set<Specialty> specialties;
+    private Set<Specialty> specialtiesSet;
 
 }
